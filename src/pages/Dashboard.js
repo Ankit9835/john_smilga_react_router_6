@@ -1,8 +1,4 @@
-const Dashboard = () => {
-  return (
-    <section className='section'>
-      <h4>Dashboard</h4>
-    </section>
-  );
-};
-export default Dashboard;
+const Dashboard = ({ user }) => {
+  return <section className='section'>Hello, {user?.name}</section>
+}
+export default Dashboard
